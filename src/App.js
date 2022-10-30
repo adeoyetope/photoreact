@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.css";
+import Center from "./components/Center";
+import Read from './components/Read';
+import Fullname from './components/Profile/Fullname';
+import Address from './components/Profile/Address';
+import Nig from './components/Nig';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return ( 
+    <>
+    <Address/> <Nig/>
+  <div>
+    <Address/><center>  <Fullname/><Read/> <Center/> </center> 
+  </div>
+  </>
+  )
 }
 
 export default App;
